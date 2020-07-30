@@ -4,12 +4,12 @@ server:
 spring:
   datasource:
     username: sa
-    url: jdbc:h2:mem:testdb
+    url: jdbc:h2:file:./tentFactoryTestDb
 
 keycloak:
   server:
     contextPath: /auth
     adminUser:
-      username: bael-admin
-      password: pass
+      username: tentFactory-admin
+      password: backpacker
     realmImportFile: baeldung-realm.json
